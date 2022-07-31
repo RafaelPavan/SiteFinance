@@ -10,10 +10,15 @@ body{
 }
 
 header nav{
-    background-color: rgba(0, 0, 0, 0.8);display: flex;
+    background-color: rgba(0, 0, 0, 1);display: flex;
     align-items: center;
     justify-content: space-around;
     height: 8vh;
+}
+nav{
+    position: fixed;
+    width: 100%;
+       
 }
 
 header ul{
@@ -40,7 +45,7 @@ header a:hover{
     
 }
 
-.money-img h1{
+.main h1{
     /* background-color: red; */
     height: 100px;
     display: flex;
@@ -49,11 +54,13 @@ header a:hover{
     align-items: center;
     letter-spacing: 6px;
     font-size: 45px;
-    font-style: italic;
+    font-style: italic;  
+    padding: 100px 0 50px 0;
+    
 
 }
 
-.money-img h2{
+.main h2{
     /* background-color: aqua; */
     
     display: flex;
@@ -82,3 +89,16 @@ section div.bills-coins{
     
 }
 
+ section.test div.bills-coins{
+    display: flex;
+    background-image: url('../imgs/background.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    margin-left: 14%;
+    width: 70%;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px 15px rgb(150, 148, 148);
+    margin-top: 160px;
+}
