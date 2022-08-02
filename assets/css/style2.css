@@ -41,7 +41,7 @@ header a{
 }
 
 header a:hover{
-    opacity: 0.7;
+    opacity: 0.8;
     
 }
 
@@ -89,16 +89,9 @@ section div.bills-coins{
     
 }
 
- section.test div.bills-coins{
+ section.test {
     display: flex;
-    background-image: url('../imgs/background.jpg');
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    margin-left: 14%;
-    width: 70%;
-    height: 350px;
-    border-radius: 30px;
-    box-shadow: 0 0 15px 15px rgb(150, 148, 148);
-    margin-top: 160px;
+    background-color: aliceblue;
+    
+    
 }
