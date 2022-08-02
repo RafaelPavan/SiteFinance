@@ -58,25 +58,32 @@ header{
 
 }
 
-/* Another transition type
-.menu-content .nav-list a::before{
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 0px;
-    height: 1px;
-    background-color: aliceblue;
-    transition: all 1.5s ease;
-
-} */
-
 .menu-content .nav-list a:hover{
     opacity: 0.7;
-
 }
 
-/*Center - Main Content*/
+.menu-content .signs a:hover{
+    opacity: 0.7;
+}
+
+.menu-content .signs{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.menu-content .signs a{
+    font-style: italic;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: white;
+    padding: 1.5rem;
+    transition: 0.3s;
+    /* transition: 2ms ease-in;
+    position: relative; */
+
+}
 
 main{
     height: 93vh;
@@ -85,74 +92,26 @@ main{
     align-items: center;
 }
 
-.main-content{
+/*Text and img*/
+.financial{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* Texts designs main content*/
-
-.primary-text{
-    width: 850px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 6rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.second-text{
-    margin-bottom: 4rem;
-    font-size: 3.5rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-/* Buttons */
-
-.btns{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.btns button{
-    width: 200px;
-    height: 50px;
-    cursor: pointer;
-    border: 1px solid white;
+.financial p{
+    font-style: italic;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
     color: white;
-    text-transform: uppercase;
-    background-color: transparent;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    border-radius: 20px;
-    position: relative;
-    transition: 1.5s;
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1.5rem;
 }
 
-.btns button::before{
-    content: ' ';
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    width: 0;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-    transition: 1s;
-    border-radius: 20px;
-
+.financial img{
+    width: 25rem;
+    border-radius: 25px;
+    margin-left: 50%;
+    
 }
-
-.btns button:hover:before{
-    width: 100%;
-}
-
-.btns button:hover{
-    border:none;
-}
-
