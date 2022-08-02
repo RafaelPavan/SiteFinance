@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Background*/
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+body{
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/assets/imgs/pexels-david-mcbee-730547.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+/* Menu - Header - NavBar*/
+
+header{
+    width: 100%;
+    height: 7vh;
+    background: rgba(17, 17, 17, 1);
+}
+
+.menu-content{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.menu-content .nav-list{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+
+}
+
+.menu-content .nav-list a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: white;
+    padding: 1.5rem;
+    transition: 0.3s;
+    /* transition: 2ms ease-in;
+    position: relative; */
+
+}
+
+/* Another transition type
+.menu-content .nav-list a::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: aliceblue;
+    transition: all 1.5s ease;
+
+} */
+
+.menu-content .nav-list a:hover{
+    opacity: 0.7;
+
+}
+
+/*Center - Main Content*/
+
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texts designs main content*/
+
+.primary-text{
+    width: 850px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.second-text{
+    margin-bottom: 4rem;
+    font-size: 3.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* Buttons */
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btns button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btns button::before{
+    content: ' ';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    transition: 1s;
+    border-radius: 20px;
+
+}
+
+.btns button:hover:before{
+    width: 100%;
+}
+
+.btns button:hover{
+    border:none;
+}
+
